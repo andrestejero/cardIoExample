@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.cardio.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="Test de io.card"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        tools:text="4800 3344 5341 4322" />
+
+    <Button
+        android:id="@+id/openRetrofit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/openKotlinTest"
+        android:layout_marginBottom="16dp"
+        android:text="Abrir Retrofit" />
+
+    <Button
+        android:id="@+id/openKotlinTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/openCustom"
+        android:layout_marginBottom="16dp"
+        android:text="Abrir Listado Kotlin" />
+
+    <Button
+        android:id="@+id/openCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/openExample"
+        android:layout_marginBottom="16dp"
+        android:text="Abrir Custom" />
+
+    <Button
+        android:id="@+id/openExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/openIoCard"
+        android:layout_marginBottom="16dp"
+        android:text="Abrir Ejemplo" />
+
+    <Button
+        android:id="@+id/openIoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Escanear tarjeta" />
+
+</RelativeLayout>
